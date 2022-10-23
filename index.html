@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Rafael Henrique de Sousa Vieira">
+    <meta name="keywords"
+        content="programação, html, css, Electronic Voting Machine, Rafael Henrique de Sousa Vieira, Urna Eletronica, Frontend, Front, end">
+    <meta name="robots" content="index, follow">
+    <meta name="description"
+        content="This project was made to create an electronic voting machine, using html, css and javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/IMG/Urna Eletronica/images/logo.png">
+
+    <title>Electronic Voting Machine</title>
+
+    <link rel="stylesheet" href="/CSS/Urna Eletronica/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Electronic Voting Machine</h1>
+    </header>
+
+    <main>
+        <section class="screen">
+            <div class="main_screen">
+                <div class="informations">
+                    <header>
+                        <span>Seu voto para</span>
+                    </header>
+
+                    <div class="office">
+                        <span>Vereador</span>
+                    </div>
+
+                    <div class="numbers">
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="informations_office">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="images">
+                    <div class="images_main">
+                        <img src="/IMG/Urna Eletronica/images/84.jpg" alt="84.jpg">
+                        <p></p>
+                    </div>
+
+                    <div class="images_secondary">
+                        <img class="small" src="/IMG/Urna Eletronica/images/84_2.jpg" alt="84_2.jpg">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instructions">
+                <p>Aperte a Tecla</p>
+                <p>CONFIRMA para CONFIRMAR este voto</p>
+                <p>CORRIGE para REINICIAR este voto</p>
+            </div>
+        </section>
+
+        <section class="keyboard">
+            <header>
+                <img src="/IMG/Urna Eletronica/images/logo.png" alt="logo.png">
+                <h2>Justiça Eleitoral</h2>
+            </header>
+
+            <div class="row">
+                <button onclick="insert('1')">1</button>
+                <button onclick="insert('2')">2</button>
+                <button onclick="insert('3')">3</button>
+            </div>
+
+            <div class="row">
+                <button onclick="insert('4')">4</button>
+                <button onclick="insert('5')">5</button>
+                <button onclick="insert('6')">6</button>
+            </div>
+
+            <div class="row">
+                <button onclick="insert('7')">7</button>
+                <button onclick="insert('8')">8</button>
+                <button onclick="insert('9')">9</button>
+            </div>
+
+            <div class="row">
+                <button onclick="insert('0')">0</button>
+            </div>
+
+            <div class="row">
+                <button class="white" onclick="white()">BRANCO</button>
+                <button class="correct" onclick="correct()">CORRIGE</button>
+                <button class="confirm" onclick="confirmVote()">CONFIRMA</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Coded by <a href="https://github.com/RafaelHDSV" target="_blank">Rafael Henrique de Sousa Vieira</a>.</p>
+    </footer>
+
+    <script src="/JAVASCRIPT/Urna Eletronica/script.js"></script>
+</body>
+
+</html>
