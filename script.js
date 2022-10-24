@@ -119,10 +119,10 @@ function uptadeInterface() {
         for (let i in officeInserted.photos) {
             if (officeInserted.photos[i].small) {
                 imagesHTML +=
-                    `<div class="images_secondary"><img class="small" src="/IMG/Urna Eletronica/images/${officeInserted.photos[i].url}" alt="84.jpg"><p>${officeInserted.photos[i].label}</p></div>`
+                    `<div class="images_secondary"><img class="small" src="images/${officeInserted.photos[i].url}" alt="84.jpg"><p>${officeInserted.photos[i].label}</p></div>`
             } else {
                 imagesHTML +=
-                    `<div class="images_main"><img src="/IMG/Urna Eletronica/images/${officeInserted.photos[i].url}" alt="84.jpg"><p>${officeInserted.photos[i].label}</p></div>`
+                    `<div class="images_main"><img src="images/${officeInserted.photos[i].url}" alt="84.jpg"><p>${officeInserted.photos[i].label}</p></div>`
             }
         }
 
