@@ -43,7 +43,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 19.5rem;
+    min-height: 20rem;
     background: linear-gradient(to right, #e8e8e8, #c1c1c1);
     border-style: inset;
 }
@@ -243,4 +243,31 @@ footer {
     color: #000000;
     text-align: center;
     font-size: 14px;
+}
+
+@media screen and (max-width: 750px) {
+    body header {
+        font-size: 14px;
+        padding: 1rem 0;
+    }
+
+    main {
+        flex-direction: column;
+        min-width: 100%;
+        min-height: 100vh;
+    }
+
+    .screen {
+        width: 100%;
+        min-height: 20rem;
+        overflow: scroll;
+    }
+
+    .keyboard {
+        width: 100%;
+        min-height: 20rem;
+        height: 100vh;
+        overflow: scroll;
+    }
+
 }
