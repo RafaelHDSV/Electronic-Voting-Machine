@@ -151,11 +151,11 @@ function insert(number) {
         }
     }
 
-    (new Audio('/IMG/Urna Eletronica/audio/audio1.mp3')).play()
+    (new Audio('audio/audio1.mp3')).play()
 }
 
 function white() {
-    (new Audio('/IMG/Urna Eletronica/audio/audio1.mp3')).play()
+    (new Audio('audio/audio1.mp3')).play()
 
     numbersInserted = ''
     whiteInserted = true
@@ -167,7 +167,7 @@ function white() {
 }
 
 function correct() {
-    (new Audio('/IMG/Urna Eletronica/audio/audio2.mp3')).play()
+    (new Audio('audio/audio2.mp3')).play()
     startStage()
 }
 
@@ -203,7 +203,7 @@ function confirmVote() {
             console.log(insertedVote);
         }
 
-        (new Audio('/IMG/Urna Eletronica/audio/audio3.mp3')).play()
+        (new Audio('audio/audio3.mp3')).play()
     }
 }
 
